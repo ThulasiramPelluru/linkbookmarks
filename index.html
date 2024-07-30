@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index1.css" />
+    <style>
+      .linkbook{
+        height: 50px;
+        border-color: #ffb300;
+        position: fixed;
+        list-style-type: none;
+        margin: 0px;
+        background-image: linear-gradient(
+          to right,
+          rgb(235, 250, 63),
+          rgb(255, 0, 234)
+        );
+      }
+      .linkbook li a{
+        text-decoration: none;
+        
+  
+      }
+      .linkbook li{
+        display: inline-block;
+        margin: 10px;
+        border: 3px solid rgb(255, 0, 21);
+        text-align: center;
+        background-color: rgb(0, 255, 136);
+        
+      }
+      .linkbook li:hover{
+        background-color: rgb(217, 255, 0);
+        height: 21px;
+      }
+      h1{
+        margin: 30px;
+        border: 15px double rgb(0, 255, 110) ;
+        background-color: rgb(247, 84, 25);
+        text-align: center;
+      }
+      #ptr {
+        color: rgb(43, 226, 86);
+        background-color: rgb(170, 18, 18);
+      }
+      .contain {
+        text-align: center;
+      }
+      /* table,
+      th,
+      tr,
+      td {
+        border: 7px solid rgb(239, 6, 6);
+        padding: 7px;
+        border-top: dotted 7px rgb(0, 51, 255);
+        border-bottom: double 8px cyan;
+        border-left: inset 8px green;
+        border-right: groove 8px rgb(255, 0, 212);
+      } */
+      table {
+        border-collapse: collapse;
+        margin: auto;
+      }
+      p {
+        border: inset 30px green;
+      }
+      .main {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(179, 146, 245);
+      }
+      td {
+        border: 3px solid gold;
+        width: 165px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .main {
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(
+          to right,
+          rgb(65, 65, 154),
+          darkgreen
+        );
+      }
+      .container th,
+      .container tr,
+      .container td {
+        border: 3px solid black;
+        color: white;
+      }
+      .container2 {
+        border-style: none;
+        width: 600px;
+        height: fit-content;
+        border-collapse: collapse;
+        border: 0px solid black;
+      }
+      .container2 th,
+      .container2 tr,
+      .container2 td {
+        border: 3px solid black;
+        color: black;
+      }
+      .container2 {
+        width: 600px;
+        height: fit-content;
+      }
+      .container2 td,
+      .container2 .th {
+        background-color: green;
+      }
+      .container2 th {
+        background-color: yellow;
+      }
+      .nested2 {
+        padding: 20px 1px 1px 1px;
+        border-style: hidden;
+      }
+      .nested1 {
+        padding: 20px 1px 20px 1px;
+        border-style: hidden;
+      }
+      td:hover {
+        background-color: tomato;
+        font-size: 20px;
+        height: 20px;
+      }
+      th:hover {
+        background-color: turquoise;
+        font-size: 20px;
+        height: 20px;
+      }
+      .th:hover {
+        background-color: rgb(252, 8, 228);
+        font-size: 20px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(239, 254, 193);">
+  <ul class="linkbook">
+    <li><a href="#a">TABLE</a></li>
+    <li><a href="#b">BORDER</a></li>
+    <li><a href="#c">LISTS</a></li>
+    <li><a href="#d">PICTURE ELEMENT</a></li>
+    <li><a href="#e">TAGS</a></li>
+    <li><a href="#f">YOUTUBE</a></li>
+    <li><a href="#g">MAPS</a></li>
+    <li><a href="#h">MARQUEE</a></li>
+    <li><a href="#i">IMAGES</a></li>
+    <li><a href="#j">BACKGROUND IMAGES</a></li>
+    <li><a href="#k">IMAGE MAPPING</a></li>
+    <li><a href="#l">COLORS</a></li>
+    <li><a href="#m">IFRAMES</a></li>
+
+  </ul>
+    <h1 id="a">TABLES</h1>
+  <!-- <div class="contain">
+    <table>
+      <tr>
+        <th>S.NO</th>
+        <th>NAME</th>
+        <th>CONTACT</th>
+        <th>COURSE</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>UDAY</td>
+        <td>6302282540</td>
+        <td>PYTHON FULL STACK</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>LOKESH</td>
+        <td>8302282540</td>
+        <td>JAVA FULL STACK</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>SARVAN</td>
+        <td>9302282540</td>
+        <td>DATA SCIENCE</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>SIVA</td>
+        <td>7302282540</td>
+        <td>MERN STACK</td>
+      </tr>
+    </table> -->
+    <div class="main">
+      <table class="container">
+        <tr>
+          <th>Header column 1</th>
+          <th>Header column 2</th>
+          <th>Header column 3</th>
+          <th>Header column 4</th>
+        </tr>
+        <tr>
+          <td>Row-2-Item 1</td>
+          <td>Row-2-Item 2</td>
+          <td rowspan="2">
+            Row-2-Nested Table 1
+            <table class="nested1">
+              <tr>
+                <th>Row 1 Header</th>
+                <td>item</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>item</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>item</td>
+              </tr>
+            </table>
+          </td>
+          <td>Row-2-Item 4 <br />A Second line</td>
+        </tr>
+        <tr>
+          <td>
+            Row-3-Nested Table 2
+            <table class="nested2">
+              <tr>
+                <th>Row 1Header</th>
+                <td>item</td>
+              </tr>
+              <tr>
+                <th>Row 2 Header</th>
+                <td>item</td>
+              </tr>
+            </table>
+          </td>
+          <td>Row-3-Item 2</td>
+          <td rowspan="2">Row-3-Item 3</td>
+        </tr>
+        <tr>
+          <td>Row-4-Item 1</td>
+          <td>Row-4-Item 2</td>
+          <td>Row-4-Item 3</td>
+        </tr>
+        <tr>
+          <td colspan="4">Row-5-Last row of outer table</td>
+        </tr>
+      </table>
+      <table class="container2">
+        <tr>
+          <th><span style="background-color: pink">ACC</span></th>
+          <th></th>
+          <th class="th">Column Header 1a</th>
+          <th class="th">Column Header 1b</th>
+          <th class="th">Column Header 1c</th>
+          <th class="th">Column Header 1d</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th class="th">Column Header 2a</th>
+          <th class="th">Column Header 2b</th>
+          <th class="th">Column Header 2c</th>
+          <th class="th">Column Header 2d</th>
+        </tr>
+        <tr>
+          <th rowspan="4">Row Header 1a</th>
+          <th>Row Header 2a</th>
+          <td>Data col 1 row 1</td>
+          <td>Data col 2 row 1</td>
+          <td>Data col 3 row 1</td>
+          <td>Data col 4 row 1</td>
+        </tr>
+        <tr>
+          <th>Row Header 2b</th>
+          <td>Data col 1 row 2</td>
+          <td>Data col 2 row 2</td>
+          <td>Data col 3 row 2</td>
+          <td>Data col 4 row 2</td>
+        </tr>
+        <tr>
+          <th>Row Header 2c</th>
+          <td>Data col 1 row 3</td>
+          <td>Data col 2 row 3</td>
+          <td>Data col 3 row 3</td>
+          <td>Data col 4 row 3</td>
+        </tr>
+        <tr>
+          <th colspan="3">Summary Sub-Total</th>
+          <td>Total 1a</td>
+          <td>Total 2a</td>
+        </tr>
+        <tr>
+          <th rowspan="4">Row Header 1b</th>
+          <th>Row Header 2d</th>
+          <td>Data col 1 row 1</td>
+          <td>Data col 2 row 1</td>
+          <td>Data col 3 row 1</td>
+          <td>Data col 4 row 1</td>
+        </tr>
+        <tr>
+          <th>Row Header 2e</th>
+          <td>Data col 1 row 2</td>
+          <td>Data col 2 row 2</td>
+          <td>Data col 3 row 2</td>
+          <td>Data col 4 row 2</td>
+        </tr>
+        <tr>
+          <th>Row Header 2f</th>
+          <td>Data col 1 row 3</td>
+          <td>Data col 2 row 3</td>
+          <td>Data col 3 row 3</td>
+          <td>Data col 4 row 3</td>
+        </tr>
+        <tr>
+          <th colspan="3">Summary Sub-Total</th>
+          <td>Total 1b</td>
+          <td>Total 2b</td>
+        </tr>
+        <tr>
+          <th colspan="4">Grand Total</th>
+          <td>Grand-Total</td>
+          <td>Grand-Total</td>
+        </tr>
+      </table>
+    </div>
+    <h1 id="b">BORDER</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+      illum laborum iste qui ad nulla minus, atque omnis velit aperiam, odio
+      cum nam ipsum. Alias nesciunt assumenda est harum ipsa? Lorem ipsum
+      dolor sit, amet consectetur adipisicing elit. Consequuntur optio tempora
+      dolore explicabo provident voluptas molestiae impedit necessitatibus aut
+      voluptate, aspernatur quae, officiis vitae alias. Error aut quam ad
+      repellat!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quisquam, quod. Lorem ipsum dolor sit
+    </p>
+    <p
+      style="
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        border-color: rgb(250, 27, 6);
+        margin: auto;
+      "
+    ></p>
+    <h1 id="c">LISTS</h1>
+  </div>
+  
+    <h3 style="background-color: rgb(47, 214, 32);">NESTED LISTS</h3>
+    <ol style="background-color: rgb(93, 140, 241);color: rgb(9, 240, 101);">
+      <li>FULL STACK PYTHON
+        <ol>
+          <li>FRONTEND
+            <ol>
+              <li>HTML
+                <ul>
+                  <li>PARAGRAPHS</li>
+                  <li>HEADINGS</li>
+                  <li>LINK TAG</li>
+                  <li>IMAGE</li>
+                  <li>TABLE</li>
+                  <li>LISTS
+                    <ol>
+                      <li>ORDERED LIST
+                        <ol>
+                          <li>NUMBERS</li>
+                          <li>CAPITAL ALPHA</li>
+                          <li>SMALL ALPHA</li>
+                          <li>CAPITAL ROMAN</li>
+                          <li>SMALL ROMAN</li>
+                        </ol>
+                       <li>UNORDERED LISTS
+                        <ol>
+                          <li>DISC</li>
+                          <li>SQUARE</li>
+                          <li>CIRCLE</li>
+                          <li>NONE</li>
+                        </ol>
+                       </li> 
+                       <li>DESCRIPTION</li>
+                      </li>
+                    </ol>
+                  </li>
+                  
+                </ul>
+                
+              </li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>BOOTSTRAP</li>
+              <li>REACTJS</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <h3 style="background-color: beige;">ORDERED LIST</h3>
+    <h4 style="background-color: aqua;">NUMBERS</h4>
+    <ol type="1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ol>
+    <h4 style="background-color: aqua;">CAPITAL ALPHA</h4>
+    <ol type="A">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ol>
+    <h4 style="background-color: aqua;">SMALL ALPHA</h4>
+    <ol type="a">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ol>
+    <h4 style="background-color: aqua;">CAPITAL ROMAN</h4>
+    <ol type="I">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ol>
+    <h4 style="background-color: aqua;">SMALL ROMAN</h4>
+    <ol type="i">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ol>
+    <h3 style="background-color: blanchedalmond;">UNORDERED LIST</h3>
+    <h4 style="background-color: blueviolet;">DISC</h4>
+    <ul style="list-style-type: disc;">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ul>
+    <h4 style="background-color: blueviolet;">CIRCLE</h4>
+    <ul style="list-style-type: circle;">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ul>
+    <h4 style="background-color: blueviolet;">SQUARE</h4>
+    <ul style="list-style-type: square;">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ul>
+    <h4 style="background-color: blueviolet;">NONE</h4>
+    <ul style="list-style-type: none;">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+    </ul>
+    <h3 style="background-color: bisque;">DESCRIPTION</h3>
+    <dl>
+      <b><dt>#-FRONTEND</dt></b>
+      <dd>$-HTML</dd>
+      <dd>$-CSS</dd>
+      <dd>$-JAVASCRIPT</dd>
+      <dd>$-BOOTSTRAP</dd>
+      <dd>$-ReactJS</dd>
+    </dl>
+    <h1 id="d">PICTURE ELEMENT</h1>
+    <h3 style="background-color: rgb(240, 161, 44);">PICTURE ELEMENT</h3>
+    <picture>
+      <source media="(min-width:650px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuTlCh37DJ-ggiVrrBg9EL66MF5dEwmuV14w&usqp=CAU" >
+      <source media="(min-width:400px)"
+      srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYjj94a1EKPObxDQCbqSdwmIbkhQt5Np5lQ&usqp=CAU">
+      <img src="https://st3.depositphotos.com/1005145/15351/i/450/depositphotos_153516954-stock-photo-summer-landscape-with-flowers-in.jpg" alt="picture element" >
+    </picture>
+    <h1 id="e">LAYOUT</h1>
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+    <b>This is bold tag</b><br />
+    <i>This is italic tag</i><br />
+    <u>This is underline tag</u><br />
+    <s>This is strike tag</s><br />
+    <small>This is small tag</small><br />
+    <strong>This is strong tag</strong><br />
+    <ins>This is insert tag</ins><br />
+    2<sup>3</sup>=8<br />
+    <cite title="this is copyrighted">This is site tag</cite>
+    <mark>This is mark tag</mark><br />
+    <abbr title="hewlett packard">HP</abbr><br />
+    log<sub>2</sub>2=1<br />
+    <bdo dir="rtl">AMBULANCE</bdo><br>
+    <h1 id="f">YOUTUBE</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7dhKeHT2Bdk?si=nO2WaJsQ8-7UTqxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1 id="g">GOOGLE MAPS</h1>
+    <marquee behavior="" direction="ltr"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121812.31759874194!2d78.44003839999999!3d17.429299200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1720694781000!5m2!1sen!2sin" width="450" height="450" style="border:0;align-content: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></marquee>
+    <h1 id="h">MARQUEE</h1>
+    <marquee behavior="" direction="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis earum mollitia eum commodi odit at praesentium numquam rem expedita omnis provident non, qui eaque nemo optio ea. Fuga, incidunt!</marquee>
+    <marquee behavior="" direction="up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis earum mollitia eum commodi odit at praesentium numquam rem expedita omnis provident non, qui eaque nemo optio ea. Fuga, incidunt!</marquee>
+    <marquee behavior="" direction="down">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis earum mollitia eum commodi odit at praesentium numquam rem expedita omnis provident non, qui eaque nemo optio ea. Fuga, incidunt!</marquee>
+    <pre>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias autem doloribus inventore culpa animi perspiciatis fugit eum, eaque repudiandae, repellendus quasi magnam voluptatem aperiam a iure veritatis voluptates veniam fuga.
+      Fugiat totam omnis inventore laudantium alias quae, consequatur repudiandae aspernatur maiores hic nam sunt doloremque neque distinctio et beatae eveniet autem vero veritatis, facere numquam delectus facilis asperiores accusamus! Explicabo.
+      Eveniet dicta assumenda nobis, quidem illum pariatur ea itaque dolores odit a deleniti nam odio sequi voluptatum, explicabo illo ullam quod! Doloribus at id excepturi sit perferendis distinctio! Hic, laboriosam!
+      Omnis, iste, 
+      aperiam voluptate reprehenderit voluptas qui architecto dolore minus odit laboriosam autem, molestiae veritatis animi id. Dignissimos provident, dicta cumque soluta eius reiciendis dolorum aperiam eligendi quidem vel accusantium.
+      Consequuntur illo libero placeat? Quos soluta dolores nesciunt culpa blanditiis id autem, cupiditate iusto impedit quidem facilis. Vel, obcaecati nobis. Explicabo quaerat similique provident officiis enim ea modi vero placeat?
+                Ducimus neque fuga magni eveniet laboriosam distinctio ut, quam recusandae. Expedita necessitatibus consectetur vero labore ipsam saepe placeat, recusandae repellat quia veritatis? Repellat consequatur accusamus rerum quod. Quaerat, nemo et.
+      Ullam nemo obcaecati ipsa rem quibusdam maiores aperiam quia, alias vero tempora, totam placeat quo optio sunt nisi aspernatur exercitationem reprehenderit odit. Porro ab quod atque fugit officia odit beatae!
+      Error aperiam quos, pariatur ullam doloribus accusantium, ad reprehenderit magni rem sed quia. Neque qui nostrum autem, aut beatae nobis! Eos, neque autem sunt similique doloribus maxime porro aut illo.
+      Commodi ullam animi
+                      cupiditate ipsam, iste nulla qui quod quos ex beatae quasi earum? Magnam aut deserunt sit accusantium! Totam illum aut, aspernatur officiis tempora doloribus sint harum reiciendis natus.
+      Commodi corporis aliquam ipsa aperiam. Ratione nesciunt sit, aliquam saepe amet deserunt consequuntur hic maiores qui soluta optio repellat et molestiae magnam enim mollitia eius nostrum ea facere nobis modi.
+      Nemo esse nostrum pariatur temporibus sunt voluptatibus ullam quam explicabo aperiam? 
+    </pre>
+    <address>
+      H.no-2-52,<br />
+      muthukur,<br />
+      nellore,<br />
+      AP.
+    </address>
+    <blockquote
+      cite="https://termly.io/resources/articles/copyright-disclaimer/"
+    >
+      Termly Inc is not a lawyer or a law firm and does not engage in the
+      practice of law or provide legal advice or legal representation. All
+      information, software, services, and comments provided on the site are for
+      informational and self-help purposes only and are not intended to be a
+      substitute for professional legal advice. Use of this site is subject to
+      our Terms of Use. Copyright Termly 2024
+    </blockquote>
+    <button style="background-color: blueviolet; color: black">
+      <a href="https://www.flipkart.com/" target="blank">FLIPKART</a>
+    </button>
+    <p style="color: aqua; background-color: beige">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, eum!
+      Accusamus error odit, vel incidunt tempora blanditiis ipsum facilis atque
+      rerum dignissimos veritatis molestias quas recusandae ullam minus nemo
+      aut?
+    </p>
+    <p id="ptr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum eaque
+      deserunt aspernatur. Fuga odit quia quae voluptatum maxime iusto quos sint
+      porro voluptas, aperiam iste cupiditate molestiae nobis adipisci.
+    </p>
+    <p class="ram">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      ratione temporibus aliquam, reprehenderit quae, deleniti facilis itaque ut
+      accusamus provident illo laborum facere esse atque nesciunt ab! Corrupti,
+      placeat esse.
+    </p>
+    <h1 id="i" style="text-align: center">ABSOLUTE IMAGE</h1>
+    <img
+      style="margin: auto"
+      width="500px"
+      height="400px"
+      src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-hsf0et6704m5e9m2u5tg9uojk3-20231220101622.Medi.jpeg"
+      alt="prabhas image"
+    />
+    <h1 id="j">BACKGROUND IMAGES</h1>
+    <h3>Background Cover</h3>
+    <p
+      style="
+        background-image: url('https://tse4.mm.bing.net/th?id=OIP.rcL0RN0edd-ldDMXyDcQhwHaEK&pid=Api&P=0&h=180');
+        background-size: cover;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      libero earum. Aut numquam hic dignissimos laudantium sit blanditiis quasi
+      totam, vitae quos quis fugiat unde. Eligendi dolores quibusdam sequi.
+      Labore. Ea explicabo debitis maiores quas! Dolores quo beatae, rem, minus
+      explicabo ad impedit veritatis ipsum possimus corrupti laboriosam,
+      suscipit accusamus? Dolor repellendus earum voluptates culpa vero
+      blanditiis tempore maiores. Officiis? Magnam facilis facere commodi iure
+      placeat. Mollitia sequi iusto recusandae unde ipsum eius cum officiis,
+      accusantium nemo et cumque veritatis aspernatur dolore voluptate omnis
+      possimus explicabo magnam dignissimos eligendi? Nesciunt. Tenetur nobis
+      esse consequuntur quibusdam omnis porro est aliquam sunt harum maxime
+      error perferendis vitae delectus rerum, earum deserunt sint? Veniam odit
+      blanditiis magni recusandae assumenda pariatur reiciendis labore expedita?
+      Sunt numquam quos facilis itaque exercitationem nisi dolores deleniti a
+      necessitatibus, eos fugiat saepe accusantium molestias neque nemo. Placeat
+      animi laudantium, quam iste consequuntur obcaecati quidem praesentium ea
+      officia. Numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatibus, libero earum. Aut numquam hic dignissimos laudantium sit
+      blanditiis quasi totam, vitae quos quis fugiat unde. Eligendi dolores
+      quibusdam sequi. Labore. Ea explicabo debitis maiores quas! Dolores quo
+      beatae, rem, minus explicabo ad impedit veritatis ipsum possimus corrupti
+      laboriosam, suscipit accusamus? Dolor repellendus earum voluptates culpa
+      vero blanditiis tempore maiores. Officiis? Magnam facilis facere commodi
+      iure placeat. Mollitia sequi iusto recusandae unde ipsum eius cum
+      officiis, accusantium nemo et cumque veritatis aspernatur dolore voluptate
+      omnis possimus explicabo magnam dignissimos eligendi? Nesciunt. Tenetur
+      nobis esse consequuntur quibusdam omnis porro est aliquam sunt harum
+      maxime error perferendis vitae delectus rerum, earum deserunt sint? Veniam
+      odit blanditiis magni recusandae assumenda pariatur reiciendis labore
+      expedita? Sunt numquam quos facilis itaque exercitationem nisi dolores
+      deleniti a necessitatibus, eos fugiat saepe accusantium molestias neque
+      nemo. Placeat animi laudantium, quam iste consequuntur obcaecati quidem
+      praesentium ea officia. Numquam! Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, libero earum. Aut numquam hic dignissimos
+      laudantium sit blanditiis quasi totam, vitae quos quis fugiat unde.
+      Eligendi dolores quibusdam sequi. Labore. Ea explicabo debitis maiores
+      quas! Dolores quo beatae, rem, minus explicabo ad impedit veritatis ipsum
+      possimus corrupti laboriosam, suscipit accusamus? Dolor repellendus earum
+      voluptates culpa vero blanditiis tempore maiores. Officiis? Magnam facilis
+      facere commodi iure placeat. Mollitia sequi iusto recusandae unde ipsum
+      eius cum officiis, accusantium nemo et cumque veritatis aspernatur dolore
+      voluptate omnis possimus explicabo magnam dignissimos eligendi? Nesciunt.
+      Tenetur nobis esse consequuntur quibusdam omnis porro est aliquam sunt
+      harum maxime error perferendis vitae delectus rerum, earum deserunt sint?
+      Veniam odit blanditiis magni recusandae assumenda pariatur reiciendis
+      labore expedita? Sunt numquam quos facilis itaque exercitationem nisi
+      dolores deleniti a necessitatibus, eos fugiat saepe accusantium molestias
+      neque nemo. Placeat animi laudantium, quam iste consequuntur obcaecati
+      quidem praesentium ea officia. Numquam! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Voluptatibus, libero earum. Aut numquam hic
+      dignissimos laudantium sit blanditiis quasi totam, vitae quos quis fugiat
+      unde. Eligendi dolores quibusdam sequi. Labore. Ea explicabo debitis
+      maiores quas! Dolores quo beatae, rem, minus explicabo ad impedit
+      veritatis ipsum possimus corrupti laboriosam, suscipit accusamus? Dolor
+      repellendus earum voluptates culpa vero blanditiis tempore maiores.
+      Officiis? Magnam facilis facere commodi iure placeat. Mollitia sequi iusto
+      recusandae unde ipsum eius cum officiis, accusantium nemo et cumque
+      veritatis aspernatur dolore voluptate omnis possimus explicabo magnam
+      dignissimos eligendi? Nesciunt. Tenetur nobis esse consequuntur quibusdam
+      omnis porro est aliquam sunt harum maxime error perferendis vitae delectus
+      rerum, earum deserunt sint? Veniam odit blanditiis magni recusandae
+      assumenda pariatur reiciendis labore expedita? Sunt numquam quos facilis
+      itaque exercitationem nisi dolores deleniti a necessitatibus, eos fugiat
+      saepe accusantium molestias neque nemo. Placeat animi laudantium, quam
+      iste consequuntur obcaecati quidem praesentium ea officia. Numquam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, reprehenderit dolorem porro sunt officia illum impedit laborum mollitia itaque explicabo facere tenetur alias. Illo consequatur praesentium ad. Doloremque, veniam nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloribus laudantium ab! Vero, aspernatur illo sed iure accusantium quae necessitatibus et dolor aperiam soluta, facere labore? Itaque aliquam facere explicabo!
+      Omnis ullam asperiores iure quidem adipisci in. Sed accusamus amet autem, natus optio ea deleniti totam quidem deserunt, modi atque fuga harum impedit, non sit inventore esse! Eius, quae nemo?
+      Distinctio, quibusdam. Ratione minima dolor doloremque nulla possimus beatae, dignissimos, nam eum eius, placeat amet laudantium enim delectus sit pariatur quia perferendis recusandae explicabo ducimus illo eos repudiandae autem nisi?
+      Veniam eligendi corrupti, ipsam consectetur, fuga, fugit corporis expedita soluta labore iure id? Quisquam, ad alias! Harum officia ex nihil! Nisi minima officia nemo aliquid atque, voluptatum consectetur amet iste?
+      Deleniti magnam veniam rem, corrupti ex quam dolorum delectus ab voluptatibus, atque ad quas vero libero totam, velit minima fugit aliquid. Et, tenetur explicabo! Dolor quis ad voluptatem voluptatum similique?
+      Excepturi dolores tempore omnis labore molestiae nostrum obcaecati delectus libero ut mollitia temporibus cupiditate architecto, expedita facilis, blanditiis neque officiis cumque? Fugiat laborum molestias quisquam accusamus cum deserunt maiores magnam.
+      Molestiae ullam voluptates, iste tempora beatae quas odit sint sed reiciendis. Praesentium tempore error aperiam cum? Tempore vero temporibus molestias dolor quia perspiciatis. Praesentium accusantium laborum vel alias, nobis veritatis?
+      Quisquam deleniti voluptas veniam quibusdam quae similique id quod ea sit accusamus explicabo, repellendus rem cumque velit. Aperiam, ad eos ratione veniam porro nemo natus ipsa ab aspernatur ducimus impedit?
+      Sit vitae eos nemo blanditiis eaque molestiae dolorem ratione repellat facilis? Nostrum minima aut ad! Sed esse, ratione iste, commodi, odio quasi numquam enim reprehenderit soluta laudantium alias explicabo obcaecati.
+      Totam ducimus aspernatur earum magnam in cupiditate, nisi excepturi facilis, accusantium quasi non consequatur iure quibusdam quidem quae alias? Maiores saepe nobis quidem in tempore aspernatur, qui sed aliquam ducimus.
+    </p>
+    <h3>No Repeat</h3>
+    <p
+      style="
+        background-image: url('https://tse4.mm.bing.net/th?id=OIP.AJbkRTX5hlt7wTVx8VFBvgHaKs&pid=Api&P=0&h=180');
+        background-repeat: no-repeat;
+        background-size: 300px 300px;        
+        
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nam vero
+      sapiente repellendus obcaecati voluptate amet! Sapiente fugit sunt,
+      doloribus possimus blanditiis delectus esse odit quod unde tenetur
+      provident facilis? Aspernatur enim pariatur alias iure tenetur odit
+      molestiae ducimus maxime eius aliquid? Aspernatur omnis porro inventore
+      commodi nesciunt tenetur ipsam maxime, optio iusto reprehenderit!
+      Aspernatur atque nihil iste totam aut! Voluptatum, quisquam. Nisi
+      consectetur corrupti ex debitis, magnam sequi vitae quas enim, nulla quia
+      consequuntur mollitia libero molestias consequatur non? Eligendi quaerat
+      debitis nulla voluptatem voluptas sint rem dolore placeat? Unde dolorum
+      modi provident veritatis ex tenetur voluptatibus, illo officiis? Molestiae
+      reprehenderit placeat perspiciatis quisquam odio, praesentium voluptate
+      eum aspernatur fugiat tenetur ut quod natus, commodi asperiores!
+      Repudiandae, dignissimos maiores. Voluptates quam nam nisi tempora beatae
+      esse sequi facilis veritatis iste, soluta perspiciatis maiores autem ipsa
+      odit facere sapiente? Soluta provident ut in ratione asperiores quae quo
+      minima, blanditiis aliquam?Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, libero earum. Aut numquam hic dignissimos
+      laudantium sit blanditiis quasi totam, vitae quos quis fugiat unde.
+      Eligendi dolores quibusdam sequi. Labore. Ea explicabo debitis maiores
+      quas! Dolores quo beatae, rem, minus explicabo ad impedit veritatis ipsum
+      possimus corrupti laboriosam, suscipit accusamus? Dolor repellendus earum
+      voluptates culpa vero blanditiis tempore maiores. Officiis? Magnam facilis
+      facere commodi iure placeat. Mollitia sequi iusto recusandae unde ipsum
+      eius cum officiis, accusantium nemo et cumque veritatis aspernatur dolore
+      voluptate omnis possimus explicabo magnam dignissimos eligendi? Nesciunt.
+      Tenetur nobis esse consequuntur quibusdam omnis porro est aliquam sunt
+      harum maxime error perferendis vitae delectus rerum, earum deserunt sint?
+      Veniam odit blanditiis magni recusandae assumenda pariatur reiciendis
+      labore expedita? Sunt numquam quos facilis itaque exercitationem nisi
+      dolores deleniti a necessitatibus, eos fugiat saepe accusantium molestias
+      neque nemo. Placeat animi laudantium, quam iste consequuntur obcaecati
+      quidem praesentium ea officia. Numquam! Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Voluptatibus, libero earum. Aut numquam hic
+      dignissimos laudantium sit blanditiis quasi totam, vitae quos quis fugiat
+      unde. Eligendi dolores quibusdam sequi. Labore. Ea explicabo debitis
+      maiores quas! Dolores quo beatae, rem, minus explicabo ad impedit
+      veritatis ipsum possimus corrupti laboriosam, suscipit accusamus? Dolor
+      repellendus earum voluptates culpa vero blanditiis tempore maiores.
+      Officiis? Magnam facilis facere commodi iure placeat. Mollitia sequi iusto
+      recusandae unde ipsum eius cum officiis, accusantium nemo et cumque
+      veritatis aspernatur dolore voluptate omnis possimus explicabo magnam
+      dignissimos eligendi? Nesciunt. Tenetur nobis esse consequuntur quibusdam
+      omnis porro est aliquam sunt harum maxime error perferendis vitae delectus
+      rerum, earum deserunt sint? Veniam odit blanditiis magni recusandae
+      assumenda pariatur reiciendis labore expedita? Sunt numquam quos facilis
+      itaque exercitationem nisi dolores deleniti a necessitatibus, eos fugiat
+      saepe accusantium molestias neque nemo. Placeat animi laudantium, quam
+      iste consequuntur obcaecati quidem praesentium ea officia. Numquam!
+    </p>
+    <h3>Repeat-x</h3>
+    <p
+      style="
+        background-image: url('https://filmfare.wwmindia.com/content/2020/sep/prabhasbaahubali31601469399.jpg');
+        background-repeat: repeat-x;
+        background-size: 200px 200px;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+      obcaecati suscipit assumenda fugit animi doloremque natus fugiat eius
+      tempora omnis. Amet deleniti in assumenda exercitationem nostrum ut hic
+      eligendi eaque! Nihil, nesciunt alias doloribus molestias dicta
+      necessitatibus et illum in facere aliquid repellat amet possimus dolor
+      sint accusamus blanditiis. Odio adipisci, pariatur in quidem repellendus
+      eos similique sint maxime ex. Aliquid accusantium nihil ducimus
+      consequatur eaque exercitationem ipsa praesentium. Excepturi maxime
+      facilis mollitia impedit, laudantium numquam animi eveniet quae quidem
+      commodi explicabo ipsam veritatis sunt voluptate dolor dignissimos dicta
+      expedita? Magnam tempore accusantium rerum quo. Suscipit tenetur corporis
+      iusto blanditiis voluptate, eveniet vero quasi. Temporibus nemo impedit
+      eligendi nam sapiente, tempore quia fugiat maxime ea, cum quam odit fuga
+      iste. Eius animi facere omnis modi assumenda tempore, quidem, voluptate
+      sed ipsam corporis obcaecati perferendis cupiditate deserunt debitis hic?
+      Velit possimus reprehenderit ab dolor minus dignissimos esse accusamus
+      expedita eum nam!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatibus, libero earum. Aut numquam hic dignissimos laudantium sit
+      blanditiis quasi totam, vitae quos quis fugiat unde. Eligendi dolores
+      quibusdam sequi. Labore. Ea explicabo debitis maiores quas! Dolores quo
+      beatae, rem, minus explicabo ad impedit veritatis ipsum possimus corrupti
+      laboriosam, suscipit accusamus? Dolor repellendus earum voluptates culpa
+      vero blanditiis tempore maiores. Officiis? Magnam facilis facere commodi
+      iure placeat. Mollitia sequi iusto recusandae unde ipsum eius cum
+      officiis, accusantium nemo et cumque veritatis aspernatur dolore voluptate
+      omnis possimus explicabo magnam dignissimos eligendi? Nesciunt. Tenetur
+      nobis esse consequuntur quibusdam omnis porro est aliquam sunt harum
+      maxime error perferendis vitae delectus rerum, earum deserunt sint? Veniam
+      odit blanditiis magni recusandae assumenda pariatur reiciendis labore
+      expedita? Sunt numquam quos facilis itaque exercitationem nisi dolores
+      deleniti a necessitatibus, eos fugiat saepe accusantium molestias neque
+      nemo. Placeat animi laudantium, quam iste consequuntur obcaecati quidem
+      praesentium ea officia. Numquam! Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Voluptatibus, libero earum. Aut numquam hic dignissimos
+      laudantium sit blanditiis quasi totam, vitae quos quis fugiat unde.
+      Eligendi dolores quibusdam sequi. Labore. Ea explicabo debitis maiores
+      quas! Dolores quo beatae, rem, minus explicabo ad impedit veritatis ipsum
+      possimus corrupti laboriosam, suscipit accusamus? Dolor repellendus earum
+      voluptates culpa vero blanditiis tempore maiores. Officiis? Magnam facilis
+      facere commodi iure placeat. Mollitia sequi iusto recusandae unde ipsum
+      eius cum officiis, accusantium nemo et cumque veritatis aspernatur dolore
+      voluptate omnis possimus explicabo magnam dignissimos eligendi? Nesciunt.
+      Tenetur nobis esse consequuntur quibusdam omnis porro est aliquam sunt
+      harum maxime error perferendis vitae delectus rerum, earum deserunt sint?
+      Veniam odit blanditiis magni recusandae assumenda pariatur reiciendis
+      labore expedita? Sunt numquam quos facilis itaque exercitationem nisi
+      dolores deleniti a necessitatibus, eos fugiat saepe accusantium molestias
+      neque nemo. Placeat animi laudantium, quam iste consequuntur obcaecati
+      quidem praesentium ea officia. Numquam!
+    </p>
+    <h3>Repeat-y</h3>
+    <p
+      style="
+        background-image: url('https://www.koimoi.com/wp-content/new-galleries/2024/03/when-prabhas-was-worried-about-baahubalis-reception-in-the-north-the-budget-was-so-huge.jpg');
+        background-repeat: repeat-y;
+        background-size: 100px 100px;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa
+      mollitia saepe cumque placeat unde facilis similique perferendis
+      laboriosam animi atque quam nam earum alias in error voluptas, ex quos.
+      Temporibus ex aliquid, sed, quae deleniti sit consequuntur facere vitae
+      earum aperiam fugiat, quis reprehenderit cumque nihil autem eum
+      repudiandae error iusto atque hic commodi officia debitis laboriosam.
+      Nostrum, cumque? Temporibus quasi similique autem nisi odio provident
+      ipsam dolore sapiente. Neque dolores veritatis accusantium odio earum
+      quidem, facere, voluptatibus dignissimos voluptatem cupiditate pariatur
+      facilis tenetur ex corporis vero est officia. Dolorem sed odit voluptatum
+      rem molestiae quisquam, impedit debitis assumenda eligendi blanditiis
+      reiciendis unde, provident quod libero perspiciatis, distinctio laboriosam
+      ullam? Accusamus recusandae necessitatibus dolore cupiditate sed!
+      Perspiciatis, voluptatibus rem. Dolorem blanditiis hic dolorum amet
+      corrupti voluptate architecto sequi odio. Sapiente esse rerum, animi,
+      quibusdam vel facere tempora magnam architecto ab illum consectetur porro
+      fuga sint aperiam repellat eligendi? Consectetur! Nobis odit nostrum est
+      in ratione aliquid laborum necessitatibus ea. Optio, minima. Quae
+      blanditiis eius praesentium minima laboriosam non, et iusto unde debitis
+      temporibus libero reiciendis, optio, est alias cum. Sunt eius non
+      voluptatem animi, quis earum? Repellendus dignissimos accusamus reiciendis
+      laboriosam cumque doloribus! Blanditiis atque provident quam repellat
+      laboriosam perferendis, sequi modi ipsa explicabo ea totam voluptas
+      doloribus dolorem. Necessitatibus adipisci rem minus laboriosam, ab atque
+      provident dolore maxime tempora repellat voluptates distinctio, ducimus
+      soluta architecto aliquid sequi cum harum omnis recusandae minima nulla
+      labore sint, ullam quae! Ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid cupiditate quis odio reiciendis. Sunt doloremque consequuntur fugiat repellat consectetur, quasi, ea dolorum quisquam accusamus adipisci temporibus nostrum illum, laboriosam beatae.
+      Alias quasi magni ipsam ducimus unde odit saepe exercitationem aperiam sunt debitis cum ipsa soluta ratione, et perspiciatis sint at nam eveniet voluptates facere in quis. Recusandae velit ducimus unde?
+      Placeat quo totam, inventore quibusdam error veniam modi tenetur magni quod quisquam aliquam quia impedit quos laborum blanditiis dolores. Explicabo exercitationem molestiae laudantium reprehenderit dignissimos, debitis hic earum atque officiis.
+      Ipsum sapiente eum architecto. Suscipit aperiam ratione necessitatibus, nisi illum magni fugit! Amet eum voluptate praesentium sint? Unde nam omnis quasi distinctio eum, cumque assumenda voluptatum explicabo vitae eveniet fugit!
+      Odio repellat, temporibus culpa rem sint omnis! Quos similique qui aliquid eveniet quas et possimus obcaecati consequuntur libero est ad, atque, cum sequi, assumenda molestias voluptate placeat quam consectetur. Fuga.
+      Vitae natus eaque pariatur eveniet cupiditate. Quae provident deserunt quisquam ex aliquid officia impedit distinctio odit architecto obcaecati ab, accusamus exercitationem dignissimos quos atque culpa sunt excepturi. Nam, culpa neque.
+      Sint repellat sequi nulla soluta voluptatem iste. Voluptate laudantium praesentium impedit officia sit ullam, assumenda rerum quia quos odio architecto facere rem tempore porro laborum eius ad, fugit similique nemo.
+      Vitae aliquid dolor inventore consectetur illum eligendi maxime placeat est, odio quisquam repudiandae modi saepe optio, hic perspiciatis eaque molestiae iusto dolorem totam. Deleniti ad natus consectetur, illum tempora non.
+      Fugiat saepe temporibus earum necessitatibus modi harum iste animi, itaque vero est molestias in unde reiciendis obcaecati sunt nisi, qui, dolore delectus porro dolorem at. Voluptate ad libero et dolorem!
+      Itaque perferendis, nesciunt fugiat repellat, velit nihil temporibus est earum ullam voluptate dolorem ex corrupti delectus eos illum eum? Voluptas cupiditate, nobis doloremque atque animi aliquid commodi minima praesentium aut.
+    </p>
+    <h1 id="k">
+      IMAGE MAPPING
+    </h1>
+    <img style="margin:20px 450px;"
+      src="https://miro.medium.com/v2/resize:fit:640/1*6KGLZJLjSioz93AIOzKkUA.jpeg"
+      alt="bahubali poster"
+      usemap="#bahubali"
+    />
+    <map name="bahubali"> 
+      <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Ramya_Krishnan" coords="8,229,131,397" shape="rect"></area>
+    <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Tamannaah_Bhatia" coords="152,156,119,112,196,107,214,231,160,299,66,181,117,109" shape="poly"></area>
+    <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Prabhas" coords="207,6,394,298" shape="rect"></area>
+    <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Anushka_Shetty" coords="394,43,494,173" shape="rect"></area>
+    <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Rana_Daggubati" coords="498,47,578,288" shape="rect"></area>
+    <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Nassar_(actor)" coords="581,55,638,278" shape="rect"></area>
+    <area target="_blank" alt="" title="" href="https://en.wikipedia.org/wiki/Baahubali:_The_Beginning" coords="137,284,558,400" shape="rect"></area>
+    </map>
+    <h1 id="l">COLORS</h1>
+    <div class="main">
+      <table class="sub">
+        <tr>
+          <th>RGB COLORS</th>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(117, 117, 255)">
+            rgb(117, 117, 255)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(117, 191, 255)">
+            rgb(117, 191, 255)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(117, 234, 255)">
+            rgb(117, 234, 255)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(117, 255, 211)">
+            rgb(117, 255, 211)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(117, 255, 170)">
+            rgb(117, 255, 170)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(161, 255, 117)">
+            rgb(161, 255, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(216, 255, 117)">
+            rgb(216, 255, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(255, 214, 117)">
+            rgb(255, 214, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(255, 117, 117)">
+            rgb(255, 117, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(255, 117, 244)">
+            rgb(255, 117, 244)
+          </td>
+        </tr>
+      </table>
+      <table class="sub">
+        <tr>
+          <th>RGBA COLORS</th>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(117, 117, 255, 0.1)">
+            rgb(117, 117, 255)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(117, 191, 255, 0.2)">
+            rgb(117, 191, 255)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(117, 234, 255, 0.3)">
+            rgb(117, 234, 255)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(117, 255, 211, 0.4)">
+            rgb(117, 255, 211)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(117, 255, 170, 0.5)">
+            rgb(117, 255, 170)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(161, 255, 117, 0.6)">
+            rgb(161, 255, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(216, 255, 117, 0.7)">
+            rgb(216, 255, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(255, 214, 117, 0.8)">
+            rgb(255, 214, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(255, 117, 117, 0.9)">
+            rgb(255, 117, 117)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(255, 117, 244, 1)">
+            rgb(255, 117, 244)
+          </td>
+        </tr>
+      </table>
+      <table class="sub">
+        <tr>
+          <th>RGB GRAY SHADES</th>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(30, 30, 30)">rgb(30, 30, 30)</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(60, 60, 60)">rgb(60, 60, 60)</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(90, 90, 90)">rgb(90, 90, 90)</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(120, 120, 120)">
+            rgb(120, 120, 120)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(150, 150, 150)">
+            rgb(150, 150, 150)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(180, 180, 180)">
+            rgb(180, 180, 180)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(210, 210, 210)">
+            rgb(210, 210, 210)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(230, 230, 230)">
+            rgb(230, 230, 230)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(240, 240, 240)">
+            rgb(240, 240, 240)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: rgb(255, 255, 255)">
+            rgb(255, 255, 255)
+          </td>
+        </tr>
+      </table>
+      <table class="sub">
+        <tr>
+          <th>HEX COLORS</th>
+        </tr>
+        <tr>
+          <td style="background-color: #123342">#123342</td>
+        </tr>
+        <tr>
+          <td style="background-color: #f76363">#f76363</td>
+        </tr>
+        <tr>
+          <td style="background-color: #ff0000">#ff0000</td>
+        </tr>
+        <tr>
+          <td style="background-color: #ffb300">#ffb300</td>
+        </tr>
+        <tr>
+          <td style="background-color: #d0f805">#d0f805</td>
+        </tr>
+        <tr>
+          <td style="background-color: #8efe05">#8efe05</td>
+        </tr>
+        <tr>
+          <td style="background-color: #05f85a">#05f85a</td>
+        </tr>
+        <tr>
+          <td style="background-color: #05f9ed">#05f9ed</td>
+        </tr>
+        <tr>
+          <td style="background-color: #072cfe">#072cfe</td>
+        </tr>
+        <tr>
+          <td style="background-color: #fd05ec">#fd05ec</td>
+        </tr>
+      </table>
+      <table class="sub">
+        <tr>
+          <th>HEX GRAY SHADES</th>
+        </tr>
+        <tr>
+          <td style="background-color: #101010">#101010</td>
+        </tr>
+        <tr>
+          <td style="background-color: #252525">#252525</td>
+        </tr>
+        <tr>
+          <td style="background-color: #404040">#404040</td>
+        </tr>
+        <tr>
+          <td style="background-color: #606060">#606060</td>
+        </tr>
+        <tr>
+          <td style="background-color: #808080">#808080</td>
+        </tr>
+        <tr>
+          <td style="background-color: #909090">#909090</td>
+        </tr>
+        <tr>
+          <td style="background-color: #ababab">#ababab</td>
+        </tr>
+        <tr>
+          <td style="background-color: #bcbcbc">#bcbcbc</td>
+        </tr>
+        <tr>
+          <td style="background-color: #cdcdcd">#cdcdcd</td>
+        </tr>
+        <tr>
+          <td style="background-color: #ffffff">#ffffff</td>
+        </tr>
+      </table>
+      <table class="sub">
+        <tr>
+          <th>HSL COLORS</th>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(20, 10%, 10%)">hsl(20,20%,20%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(40, 20%, 20%)">hsl(40, 20%, 20%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(60, 30%, 30%)">hsl(60, 30%, 30%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(80, 40%, 40%)">hsl(80, 40%, 40%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(100, 50%, 50%)">
+            hsl(100, 50%, 50%)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(120, 60%, 60%)">
+            hsl(120, 60%, 60%)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(140, 70%, 70%)">
+            hsl(140, 70%, 70%)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(160, 80%, 80%)">
+            hsl(160, 80%, 80%)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(180, 90%, 80%)">
+            hsl(180, 90%, 80%)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(200, 100%, 100%)">
+            hsl(200, 100%, 100%)
+          </td>
+        </tr>
+      </table>
+      <table class="sub">
+        <tr>
+          <th>HSLA COLORS</th>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(20, 10%, 10%, 0.1)">
+            hsl(20, 20%, 20%, 0.1)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(40, 20%, 20%, 0.2)">
+            hsl(40, 20%, 20%, 0.2)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(60, 30%, 30%, 0.3)">
+            hsl(60, 30%, 30%, 0.3)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(80, 40%, 40%, 0.4)">
+            hsl(80, 40%, 40%, 0.4)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(100, 50%, 50%, 0.5)">
+            hsl(100, 50%, 50%, 0.5)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(120, 60%, 60%, 0.6)">
+            hsl(120, 60%, 60%, 0.6)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(140, 70%, 70%, 0.7)">
+            hsl(140, 70%, 70%, 0.7)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(160, 80%, 80%, 0.8)">
+            hsl(160, 80%, 80%, 0.8)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(180, 90%, 80%, 0.9)">
+            hsl(180, 90%, 80%, 0.9)
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(200, 100%, 100%, 1)">
+            hsl(200, 100%, 100%, 1)
+          </td>
+        </tr>
+      </table>
+      <table class="sub">
+        <tr>
+          <th>HSL GRAY SHADES</th>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 10%)">hsl(0, 0%, 10%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 20%)">hsl(0, 0%, 20%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 30%)">hsl(0, 0%, 30%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 40%)">hsl(0, 0%, 40%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 50%)">hsl(0, 0%, 50%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 60%)">hsl(0, 0%, 60%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 70%)">hsl(0, 0%, 70%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 80%)">hsl(0, 0%, 80%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 90%)">hsl(0, 0%, 90%)</td>
+        </tr>
+        <tr>
+          <td style="background-color: hsl(0, 0%, 100%)">hsl(0, 0%, 100%)</td>
+        </tr>
+      </table>
+    </div>
+    <h1 id="m">IFRAMES</h1>
+    <iframe src="./index.html" height="500px" width="700px" name="SAME WEBPAGE IN IFRAMES">SAME WEBPAGE IN IFRAMES</iframe>
+  </body>
+</html>
